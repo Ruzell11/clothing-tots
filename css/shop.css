@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Header */
+.header {
+    background-color: #0D3B66;  /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.header nav {
+    display: flex;
+    gap: 25px;
+}
+
+.header nav a {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.header nav a:hover, .header nav a.active {
+    background-color: #4C9EAD;
+    color: white;
+}
+
+/* Shop Section */
+.shop {
+    padding: 60px 0;
+    background-color: #F5F5F5;  /* Light Gray */
+}
+
+.shop h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product-item p {
+    color: #777777;
+    font-size: 1.1rem;
+}
+
+.product-item .price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0D3B66;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #0D3B66;  /* Dark Blue */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #123C58;
+}
+
+/* Footer */
+footer {
+    background-color: #0D3B66;  /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Clothing Tots</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="cart.html" class="active">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cart">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically added here by JavaScript -->
+            </div>
+
+            <div class="cart-summary">
+                <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clothing Tots. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>

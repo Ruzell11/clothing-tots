@@ -1,0 +1,58 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0D3B66, #123C58);  /* Dark Blue Gradient */
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: #4C9EAD;  /* Lighter Blue for Buttons */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(76, 158, 173, 0.4);
+}
+
+.cta-button:hover {
+    background-color: #3C7D8C;  /* Slightly Darker Blue on Hover */
+    box-shadow: 0 5px 15px rgba(76, 158, 173, 0.6);
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
